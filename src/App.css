@@ -1,3 +1,23 @@
+.table{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#select{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  margin-top: 15px;
+}
+
+
+
+
+
 .App {
   text-align: center;
 }
