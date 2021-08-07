@@ -31,15 +31,8 @@ const Body = ({candidate1,candidate2,votecandidate,account}) => {
         // console.log("e.target.value:"+e.target.value);
         // console.log("candidate:"+candidate);
 
-        /* const hides=document.getElementById("hide");
-        if(hides.style.visibility!=="hidden")
-        {
-            hides.style.visibility="hidden";
-        }
-        else
-        {
-            hides.style.visibility="visible";
-        } */
+        let hides=document.getElementById("hide");
+        hides.style.display="block";
     };
 
     //here we define a function onsubmit

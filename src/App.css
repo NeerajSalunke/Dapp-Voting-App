@@ -16,6 +16,9 @@
   100% { transform: rotate(360deg); }
 }
 
+#hide{
+  display: none;
+}
 
 .table{
   display: flex;
