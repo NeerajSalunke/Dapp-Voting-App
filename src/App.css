@@ -1,3 +1,22 @@
+/* for loading */
+.loader{
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+
+  margin-top: 270px;
+  margin-left: 625px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 .table{
   display: flex;
   align-items: center;
@@ -12,12 +31,57 @@
 
 button{
   margin-top: 15px;
+  margin-bottom: 15px;
+  padding:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  /* letter-spacing: 2.5px; */
+  background-color:#f75002;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  box-shadow: 0 5px rgba(230, 137, 62, 0.925);
+}
+button:hover {
+  /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+  background-color: #f73302;
+}
+
+button:active{/*when user presses button */
+  background-color: #f73302;
+  box-shadow: 0 2px rgba(230, 137, 62, 0.925);
+  transform: translateY(3px);
+}
+
+/* for background */
+body {
+  font-size: 20px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 
 
 
 
+/* default css */
 .App {
   text-align: center;
 }

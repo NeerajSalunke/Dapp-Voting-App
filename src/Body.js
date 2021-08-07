@@ -9,6 +9,7 @@ const Body = ({candidate1,candidate2,votecandidate,account}) => {
     // var can=0;
     const[can,setCan] = useState();
 
+    
     // console.log("candidate :"+candidate);
     //here we define a function onchange
     const onchange = (e) => {
@@ -29,6 +30,16 @@ const Body = ({candidate1,candidate2,votecandidate,account}) => {
 
         // console.log("e.target.value:"+e.target.value);
         // console.log("candidate:"+candidate);
+
+        /* const hides=document.getElementById("hide");
+        if(hides.style.visibility!=="hidden")
+        {
+            hides.style.visibility="hidden";
+        }
+        else
+        {
+            hides.style.visibility="visible";
+        } */
     };
 
     //here we define a function onsubmit
@@ -47,16 +58,17 @@ const Body = ({candidate1,candidate2,votecandidate,account}) => {
         }
     }
 
+    
     return(
         <div>
             <table className="table">
                 <tbody>
-                    <tr><td>ID</td><td>Name</td><td>Vote Count</td></tr>
+                    <tr><td><b>ID</b></td><td><b>Name</b></td><td><b>Vote Count</b></td></tr>
                     <tr><td>{candidate1.id}</td><td>{candidate1.name}</td><td>{candidate1.votecount}</td></tr>
                     <tr><td>{candidate2.id}</td><td>{candidate2.name}</td><td>{candidate2.votecount}</td></tr>
                 </tbody>
             </table>
-            <span className="table"><b>Cast Your Vote:-</b></span>
+            <span className="table"><b>Cast Your Vote</b></span>
             <form className="table" id="select" onSubmit={onsubmit}>
                 <select onChange={onchange}>
                     <option defaultValue value="">Select</option>
@@ -64,7 +76,7 @@ const Body = ({candidate1,candidate2,votecandidate,account}) => {
                     <option>{candidate2.name}</option>
                 </select>
                 <button>Vote</button>
-                <span>You're voting for {candidate}</span>
+                <span id="hide">You're voting for <b>{candidate}</b></span>
             </form>
         </div>
         

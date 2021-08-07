@@ -91,7 +91,7 @@ function App() {
 
   if(loader)
   {
-    return <div>loading...</div>
+    return <div className="loader"></div>
   }
 
   return (
