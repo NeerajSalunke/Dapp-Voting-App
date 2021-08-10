@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To Vote ,user needs a metamask account with some ethers.
+In this project, i have deployed project on ganache local blockchain.
+
 
 ## Available Scripts
 
