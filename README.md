@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Online Voting Dapp
 
-## This is a online voting Web App based on Ethereum Blockchain :computer:
+## This is a online voting Dapp based on Ethereum Blockchain :computer:
 
 
 
