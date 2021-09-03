@@ -63,7 +63,8 @@ button:active{/*when user presses button */
 /* for background */
 body {
   font-size: 20px;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* background: linear-gradient(-45deg, #ee5279, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg,#23d573, white, #f79400);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
