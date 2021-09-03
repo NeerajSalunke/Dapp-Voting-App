@@ -19,11 +19,11 @@ To test the project, we would need many accounts. So we would need to use Ganach
 - To deploy smart contract to ganache local blockchain, you can run:\
 `truffle migrate --reset`
 
-## To make React App
+### To make React App
 `npx create-react-app client`\
 client is the name of react app
 
-## To install Web3
+### To install Web3
 `npm install web3`
 
 ## Available Scripts
