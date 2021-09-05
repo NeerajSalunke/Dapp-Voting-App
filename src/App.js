@@ -54,8 +54,8 @@ function App() {
 
     console.log("networkData:-"+networkData);
 
-    var address="0x07F5c9F86b644CEc6EEe429189e21cf3924F268F";
-    if(networkId == 5777)
+    var address="0x114e326a43f0670c32bf659a456d63b73b32283e";
+    if(networkId == 4) //rinkeby network id=42. Truffle id=5777.
     {
       const election = new web3.eth.Contract(Electionabi.abi,address); //here we are calling our contract 
       /* in brackets earlier was (Electionabi.abi,networkData.address) */
