@@ -32,7 +32,7 @@ function App() {
     }
     else
     {
-      window.alert("Metamask not detected");
+      window.alert("Metamask not detected.\nPlease install metamask browser extension and\nswitch to Rinkeby test network.");
     }
   };
 
